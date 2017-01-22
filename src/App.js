@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import fs from 'fs';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    fs.readdir('/');
+  }
+  
   render() {
     return (
       <div className="App">
